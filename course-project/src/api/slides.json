@@ -1,0 +1,81 @@
+[
+    [
+      {
+        "image": "/images/rectangle1.png",
+        "studentName": "Alice",
+        "fairyTaleTitle": "Cinderella",
+        "genre": "Fantasy"
+      },
+      {
+        "image": "/images/rectangle2.png",
+        "studentName": "Bob",
+        "fairyTaleTitle": "Jack and the Beanstalk",
+        "genre": "Adventure"
+      }
+    ],
+    [
+      {
+        "image": "/images/box1.png",
+        "studentName": "Charlie",
+        "fairyTaleTitle": "Hansel and Gretel",
+        "genre": "Horror"
+      },
+      {
+        "image": "/images/box2.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      }
+    ],
+    [
+      {
+        "image": "/images/box3.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      },
+      {
+        "image": "/images/box3.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      }
+    ],
+    [
+      {
+        "image": "/images/box5.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      },
+      {
+        "image": "/images/box6.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      }
+    ],
+    [
+      {
+        "image": "/images/box7.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      },
+      {
+        "image": "/images/box8.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      }
+    ],
+    [
+      {
+        "image": "/images/box9.png",
+        "studentName": "Daisy",
+        "fairyTaleTitle": "The Little Mermaid",
+        "genre": "Romance"
+      }
+    ]
+  ]
+  
