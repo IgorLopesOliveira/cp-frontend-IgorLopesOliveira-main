@@ -3,14 +3,17 @@
       {
         "image": "/images/rectangle1.png",
         "studentName": "Alice",
-        "fairyTaleTitle": "Cinderella",
-        "genre": "Fantasy"
+        "fairyTaleTitle": "Jack and the Beanstalk",
+        "genre": "Fantasy",
+        "link": "/sprookje",
+        "internal": true
       },
       {
         "image": "/images/rectangle2.png",
         "studentName": "Bob",
         "fairyTaleTitle": "Jack and the Beanstalk",
-        "genre": "Adventure"
+        "genre": "Adventure",
+        "internal": true
       }
     ],
     [
@@ -18,13 +21,15 @@
         "image": "/images/box1.png",
         "studentName": "Charlie",
         "fairyTaleTitle": "Hansel and Gretel",
-        "genre": "Horror"
+        "genre": "Horror",
+        "internal": true
       },
       {
         "image": "/images/box2.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       }
     ],
     [
@@ -32,13 +37,15 @@
         "image": "/images/box3.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       },
       {
         "image": "/images/box3.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       }
     ],
     [
@@ -46,13 +53,15 @@
         "image": "/images/box5.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       },
       {
         "image": "/images/box6.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       }
     ],
     [
@@ -60,13 +69,15 @@
         "image": "/images/box7.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       },
       {
         "image": "/images/box8.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       }
     ],
     [
@@ -74,7 +85,8 @@
         "image": "/images/box9.png",
         "studentName": "Daisy",
         "fairyTaleTitle": "The Little Mermaid",
-        "genre": "Romance"
+        "genre": "Romance",
+        "internal": true
       }
     ]
   ]
