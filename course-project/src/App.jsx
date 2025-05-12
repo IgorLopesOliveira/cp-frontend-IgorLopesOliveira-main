@@ -7,6 +7,7 @@ import FairyTaleList from './components/FairyTaleList';
 import Footer from './components/Footer';
 import MakingOf from './components/MakingOf';
 import AboutUs from './components/AboutUs';  
+import JackStory from './jack-components/JackStory';
 
 import slides from './api/slides.json';
 
@@ -48,6 +49,7 @@ function App() {
             </>
           }
         />
+        <Route path="/sprookje" element={<JackStory />} />
         <Route path="/makingof" element={<MakingOfPage />} />
         <Route path="/aboutus" element={<AboutUsPage />} />
       </Routes>

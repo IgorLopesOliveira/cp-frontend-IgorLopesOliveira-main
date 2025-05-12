@@ -524,6 +524,397 @@
   .image-collage img:hover {
     transform: scale(1.05);
   }
+
+
+  /* parallax page */
+
+
+  /* === Global === */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.jack-story-container {
+  position: relative;
+  width: 100%;
+}
+
+.gradient-background {
+  background: linear-gradient(to top, #AEE9FF 0%, #1A237E 100%);
+  width: 100%;
+}
+
+/* === Jack (Fixed Character) === */
+.jack {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* === Shared Cloud Animation === */
+@keyframes floatClouds {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+.cloud-1, .cloud-2, .cloud-3 {
+  position: absolute;
+  animation: floatClouds linear infinite;
+}
+
+.cloud-1 {
+  width: 300px;
+  top: 5%;
+  left: 10%;
+  animation-duration: 50s;
+}
+
+.cloud-2 {
+  width: 400px;
+  top: 15%;
+  right: 20%;
+  animation-duration: 10s;
+}
+
+.cloud-3 {
+  width: 300px;
+  top: 1%;
+  left: 40%;
+  animation-duration: 30s;
+}
+
+/* === SceneTrade === */
+.scene-trade {
+  position: absolute;
+  top: 1000px;
+  height: 150vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.tree, .tree1 {
+  position: absolute;
+  bottom: 25%;
+  height: 600px;
+  z-index: 2;
+}
+
+.tree-left { left: 5%; }
+.tree-right { right: 5%; }
+
+.grass {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.market {
+  position: absolute;
+  bottom: 19%;
+  left: 20%;
+  width: 300px;
+  z-index: 2;
+}
+
+.cow {
+  position: absolute;
+  bottom: 19%;
+  right: 20%;
+  width: 300px;
+  transition: transform 1s ease-in-out;
+  z-index: 4;
+}
+
+.cow.move-to-market {
+  transform: translateX(-850px);
+}
+
+/* Bean Glow Animation */
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 5px #bc58d7); }
+  50% { filter: drop-shadow(0 0 15px #783d89); }
+  100% { filter: drop-shadow(0 0 5px #43254c); }
+}
+
+.bean {
+  position: absolute;
+  left: 25%;
+  bottom: 30%;
+  width: 50px;
+  transition: transform 1s ease, opacity 1s ease;
+  cursor: pointer;
+  z-index: 1000;
+  animation: glow 1.5s infinite;
+}
+
+.bean.move-to-jack { transform: translate(350px, -150px); }
+.bean.fade-out { opacity: 0; }
+
+/* === SceneHouse === */
+.scene-house {
+  position: absolute;
+  top: 2000px;
+  height: 150vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mountains1 {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  z-index: 2;
+}
+
+.house {
+  position: absolute;
+  right: 100px;
+  bottom: 40%;
+  width: 500px;
+  transition: transform 1s ease-in-out;
+  z-index: 4;
+}
+
+.grass-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.grass1 {
+  width: 100%;
+  display: block;
+}
+
+.grass-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0e0e0;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  z-index: 5;
+}
+
+/* === SceneBean === */
+.scene-bean {
+  position: relative;
+  height: 600vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.black-grass-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.grass2 {
+  width: 100%;
+  display: block;
+}
+
+.black-grass-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0e0e0;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  z-index: 5;
+}
+
+.mountains2, .mountains3, .mountains4 {
+  position: absolute;
+  width: 100%;
+}
+
+.mountains2 { bottom: 40%; z-index: 1; }
+.mountains3 { bottom: 30%; z-index: 2; }
+.mountains4 { bottom: 20%; z-index: 2; }
+
+.beanstalk {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  z-index: 1;
+}
+
+/* === SceneCastle === */
+.scene-castle {
+  position: absolute;
+  height: 600vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cloud-top-container {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+  z-index: 2;
+}
+
+.cloud1 {
+  width: 100%;
+  display: block;
+}
+
+.cloud-text {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2a2a2a;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  z-index: 5;
+}
+
+.castle {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.egg, .egg1, .egg2, .egg3 {
+  position: absolute;
+  width: 30px;
+  z-index: 0;
+}
+
+.egg { left: 21%; top: 4.2%; }
+.egg1 { right: 21%; top: 4.2%; }
+.egg2 { left: 45%; top: 0.5%; }
+.egg3 { right: 8%; top: 9%; }
+
+/* === SceneGiant === */
+.scene-giant {
+  position: absolute;
+  height: 300vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.wall-scene-container {
+  position: absolute;
+  width: 100%;
+  top: 500px;
+  z-index: 2;
+}
+
+.wall {
+  width: 100%;
+  display: block;
+}
+
+.wall-text {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e0e0e0;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  z-index: 5;
+}
+
+.giant {
+  position: absolute;
+  width: 500px;
+  z-index: 1;
+}
+
+.hen {
+  position: absolute;
+  width: 200px;
+  right: 5%;
+  top: 12%;
+  z-index: 4;
+}
+
+.harp {
+  position: absolute;
+  width: 200px;
+  top: 10%;
+  right: 15%;
+  z-index: 4;
+}
+
+/* === Stars & Moon === */
+.moon {
+  position: absolute;
+  width: 500px;
+  top: -300px;
+  z-index: 1;
+}
+
+/* === GoldenEgg & Counter === */
+.golden-egg {
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 1000;
+}
+
+.golden-egg:hover {
+  transform: scale(1.2);
+}
+
+.egg-counter {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(204, 183, 60);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  z-index: 9999;
+}
+
+/* === TextClouds === */
+.text-cloud {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 10px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+}
   
   
     
