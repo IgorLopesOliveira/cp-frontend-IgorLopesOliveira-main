@@ -33,14 +33,15 @@ function MakingOf() {
         <div className="extra-content">
           <h2 className="text-title">Making of</h2>
           <p className="text-paragraph">
-            This website is designed as a one-scroll adventure that follows the story of Jack and the Beanstalk. It's divided into six parts, each representing a major scene from the story. As you scroll down, you'll move through each chapter just like Jack's journey.
-          </p>
+            This website is an interactive scroll-based journey that tells the story of Jack and the Beanstalk through a dynamic and immersive web experience. The entire story unfolds as the user scrolls upward, simulating Jack’s ascent into the sky. The page is divided into six major scenes, each one visually representing a key moment in the narrative. Instead of navigating through separate pages, users continuously scroll to move from one scene to the next.          </p>
           <p className="text-paragraph">
-            Each section features basic parallax effects, where the background moves faster than the foreground to create a sense of depth. Some elements will have mouse-controlled parallax, adding more interaction and making the world feel alive.
-          </p>
+            The background features a vertical gradient from light blue to dark blue, representing the progression from ground to sky. Jack is fixed in the center of the screen throughout the scroll. His image changes depending on the scene — for example, his arms go up when climbing, or he turns sideways to interact with the environment. Around Jack, various scene elements such as clouds, trees, mountains, and props are composed using PNG images layered with parallax effects to create depth and movement. These elements move at different speeds depending on their distance in the scene, making the visuals more engaging and realistic.          </p>
           <p className="text-paragraph">
-            You'll also find interactive buttons — for example, clicking on Jack's cow will trigger the trade for magic beans. Animations will bring the story to life, like a bird flying by as Jack climbs the beanstalk. There's even an easter egg hidden somewhere on the page for you to discover! To complete the experience, background music will play softly as you scroll through the magical world of Jack's adventure.
-          </p>
+            To bring the story to life, text clouds appear above Jack at certain points in the scroll, simulating thoughts or dialogue. These messages are timed with the narrative to enhance storytelling. Interactivity plays a key role as well. In one scene, clicking on the magic bean triggers a trade animation where the cow moves to the market and the bean floats toward Jack before fading away. Throughout the page, golden eggs are hidden. Each time the user clicks on one, a counter in the bottom corner increases. Once all five eggs are found, an easter egg scene — a golden heaven — is revealed at the top of the page as a secret reward.          </p>
+          <p className="text-paragraph">
+            The entire experience is accompanied by background music that loops softly in the background. A mute/unmute toggle allows the user to control audio playback. The project was developed using React and Vite, and relies heavily on React hooks such as useState, useEffect, useRef, and useContext to manage scroll behavior, scene transitions, interactivity, and UI updates. Each scene and major feature was modularized into separate components to keep the code clean and manageable.</p>
+          <p className="text-paragraph">
+            This project was a creative and technical exploration in blending web development, animation, and storytelling — turning a classic fairy tale into a fully interactive, scroll-driven web adventure.</p>
           <h2 className="text-title">Author & Genre</h2>
           <p className="text-paragraph">
             <strong>Jack and the Beanstalk</strong> is a traditional English fairy tale, first published by <strong>Benjamin Tabart</strong> in <strong>1807</strong> and later popularized by <strong>Joseph Jacobs</strong> in <strong>1890</strong>. It belongs to the genres of <strong>fairy tales</strong>, <strong>folk tales</strong>, and <strong>fantasy</strong>.
@@ -62,8 +63,11 @@ function MakingOf() {
           <img src="/images/box5.png" alt="Source 3" className="extra-image" />
         </div>
         <p className="text-paragraph">
-          All images used in this project were either created by me, taken from free resource websites like Unsplash and Pixabay, or edited versions of free assets. Every effort was made to respect copyright and properly attribute sources when necessary. If needed, original authors and licenses are available upon request.
-        </p>
+          All visual assets used in this project were either created by me from scratch in Adobe Illustrator or adapted from free resources found on websites like Unsplash and Pixabay. In several cases, downloaded images were vectorized and customized to match the visual style of the story. The majority of scene elements, including the characters, props, and backgrounds, were fully designed, layered, and optimized manually to create a cohesive and animated fairy tale world.        </p>
+        <p className="text-paragraph">
+          This project draws heavy visual and structural inspiration from NASA Prospect, particularly in its vertical scroll storytelling, fixed character positioning, and use of layered parallax. While this version tells a completely different story, it adopts similar creative techniques to engage users in a visually immersive and narrative-driven experience.        </p>
+        <p className="text-paragraph">
+          Every effort was made to respect copyright usage and properly handle image licenses. If any further clarification or attribution is required, original sources and license details are available upon request.        </p>
       </div>
 
     </div>
