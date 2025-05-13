@@ -202,6 +202,11 @@ body, html {
   transition: transform 0.3s ease;
 }
 
+.box a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .box:hover {
   transform: translateY(-5px);
 }

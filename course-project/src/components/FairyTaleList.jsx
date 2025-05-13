@@ -19,7 +19,8 @@ const FairyTaleList = ({ slides }) => {
             studentName={item.studentName}      // name of the student
             link={item.link}                    // external link to the fairy tale
             fairyTaleTitle={item.fairyTaleTitle} // title of the fairy tale
-            genre={item.genre}                  // genre of the story
+            genre={item.genre}    
+            internal={item.internal}              // genre of the story
           />
         ))}
       </ul>
